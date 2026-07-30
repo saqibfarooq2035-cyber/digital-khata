@@ -1,0 +1,4 @@
+import api from './axios';
+
+export const getPayments = () => api.get('/payments');
+export const createPayment = (payload) => api.post('/payments', payload);

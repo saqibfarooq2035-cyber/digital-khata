@@ -1,0 +1,26 @@
+# Node
+node_modules/
+dist/
+npm-debug.log*
+
+# .NET
+bin/
+obj/
+*.user
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# WhatsApp service session data
+whatsapp-service/.wwebjs_auth/
+whatsapp-service/.wwebjs_cache/
+
+# Uploaded receipt images (regenerated at runtime)
+backend/wwwroot/uploads/payment-receipts/*.jpg
+backend/wwwroot/uploads/payment-receipts/*.png
+backend/wwwroot/uploads/payment-receipts/*.pdf

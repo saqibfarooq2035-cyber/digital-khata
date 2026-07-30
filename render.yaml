@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: digital-khata-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        sync: false
+      - key: JwtSettings__SecretKey
+        sync: false
+      - key: JwtSettings__Issuer
+        value: DigitalKhata
+      - key: JwtSettings__Audience
+        value: DigitalKhataUsers
+      - key: JwtSettings__ExpiryHours
+        value: "24"
+      - key: ShopSettings__AdminWhatsApp
+        value: "923001234567"
+      - key: ShopSettings__ShopName
+        value: Digital Khata
+      - key: AppSettings__BaseUrl
+        sync: false
+      - key: AppSettings__MaxFileSizeMB
+        value: "5"
+      - key: Cors__AllowedOrigins
+        sync: false

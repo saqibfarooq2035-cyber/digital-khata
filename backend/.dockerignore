@@ -1,0 +1,5 @@
+bin/
+obj/
+wwwroot/uploads/payment-receipts/*.jpg
+wwwroot/uploads/payment-receipts/*.png
+wwwroot/uploads/payment-receipts/*.pdf
